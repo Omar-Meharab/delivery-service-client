@@ -14,7 +14,7 @@ const AddServices = () => {
             price: data.price,
             imageURL: imageURL
         };
-        const url = `http://localhost:5000/addServices`
+        const url = `https://vast-hollows-78144.herokuapp.com/addServices`
         fetch(url, {
             method: 'POST',
             headers: {
