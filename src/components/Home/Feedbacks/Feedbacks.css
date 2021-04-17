@@ -1,0 +1,8 @@
+.feedbacks .card{
+    border-color: transparent;
+}
+
+.feedbacks .card .card-footer{
+    background: transparent;
+    border: 0;
+}
