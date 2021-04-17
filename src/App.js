@@ -5,15 +5,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
-// import Admin from "./components/Admin/Admin";
-// import Orders from "./components/Orders/Orders";
 import './App.css';
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import Home from "./components/Home/Home/Home";
-// import NoMatch from "./components/NoMatch/NoMatch";
-// import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-import Login from "./components/Login/Login";
-// import CheckOut from "./components/CheckOut/CheckOut";
+import Login from "./components/Login/Login/Login";
+import AddServices from "./components/Dashboard/AddServices/AddServices";
+import AddFeedbacks from "./components/Dashboard/AddFeedbacks/AddFeedbacks";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
@@ -21,19 +19,9 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      {/* <p className="btn btn-primary">User Name: {loggedInUser.name}</p> */}
         <Router>
           <div>
             <Switch>
-              {/* <PrivateRoute path="/admin">
-                <Admin />
-              </PrivateRoute>
-              <PrivateRoute path="/orders">
-                <Orders />
-              </PrivateRoute>
-              <PrivateRoute path="/checkout/:id">
-                <CheckOut />
-              </PrivateRoute> */}
               <Route exact path="/">
                 <Home />
               </Route>
@@ -43,6 +31,12 @@ function App() {
               <Route path="/dashboard">
                 <Dashboard />
               </Route>
+              <Route path="/addServices">
+                <AddServices />
+              </Route>
+              <PrivateRoute path="/addFeedbacks">
+                <AddFeedbacks />
+              </PrivateRoute>
             </Switch>
           </div>
         </Router>

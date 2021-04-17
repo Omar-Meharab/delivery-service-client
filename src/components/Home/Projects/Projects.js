@@ -8,22 +8,22 @@ import ProjectDetail from '../ProjectDetail/ProjectDetail';
 const testimonialData = [
     {
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-        name : 'project 01',
+        name : 'Project 01',
         img : project1
     },
     {
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-        name : 'project 02',
+        name : 'Project 02',
         img : project2
     },
     {
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-        name : 'project 03',
+        name : 'Project 03',
         img : project3
     },
     {
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-        name : 'project 04',
+        name : 'Project 04',
         img : project1
     }
 ]

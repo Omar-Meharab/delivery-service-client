@@ -1,13 +1,19 @@
 import React from 'react';
-import AddServices from '../AddServices/AddServices';
-import AddFeedbacks from '../AddFeedbacks/AddFeedbacks';
+import Sidebar from '../Sidebar/Sidebar';
+
+const containerStyle = {
+    backgroundColor: "#F4FDFB",
+    height:"100%"
+}
 
 const Dashboard = () => {
     return (
         <div>
-            <h1>This is dashboard</h1>
-            <AddServices></AddServices>
-            <AddFeedbacks></AddFeedbacks>
+            <div style={containerStyle} className="container-fluid row">
+                <div className="col-md-2 p-0">
+                    <Sidebar></Sidebar>
+                </div>
+            </div>
         </div>
     );
 };

@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
-import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
-import Navbar from '../Shared/Navbar/Navbar';
-import Footer from '../Shared/Footer/Footer';
-import login from '../resources/login.jpg';
+import Navbar from '../../Shared/Navbar/Navbar';
+import Footer from '../../Shared/Footer/Footer';
+import login from '../../resources/login.jpg';
+import { UserContext } from '../../../App';
 
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
