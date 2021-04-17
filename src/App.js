@@ -8,10 +8,11 @@ import {
 // import Admin from "./components/Admin/Admin";
 // import Orders from "./components/Orders/Orders";
 import './App.css';
+import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import Home from "./components/Home/Home/Home";
 // import NoMatch from "./components/NoMatch/NoMatch";
 // import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-// import Login from "./components/Login/Login";
+import Login from "./components/Login/Login";
 // import CheckOut from "./components/CheckOut/CheckOut";
 
 export const UserContext = createContext();
@@ -36,9 +37,12 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              {/* <Route path="/login">
+              <Route path="/login">
                 <Login />
-              </Route> */}
+              </Route>
+              <Route path="/dashboard">
+                <Dashboard />
+              </Route>
             </Switch>
           </div>
         </Router>
