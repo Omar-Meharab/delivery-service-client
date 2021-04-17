@@ -20,6 +20,11 @@ const testimonialData = [
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
         name : 'project 03',
         img : project3
+    },
+    {
+        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
+        name : 'project 04',
+        img : project1
     }
 ]
 
