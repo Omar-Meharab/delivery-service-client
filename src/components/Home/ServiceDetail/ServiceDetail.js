@@ -5,7 +5,7 @@ const ServiceDetail = (props) => {
     const { name, imageURL, price, _id } = props.services;
     const history = useHistory();
     const handleOrder = (id) => {
-        history.push(`/service/${id}`);
+        history.push(`/checkout/${id}`);
     }
     return (
         <div className="col-md-3 text-center shadow-sm mx-auto m-3">

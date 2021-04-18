@@ -13,6 +13,8 @@ import AddServices from "./components/Dashboard/AddServices/AddServices";
 import AddFeedbacks from "./components/Dashboard/AddFeedbacks/AddFeedbacks";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import ManageServices from "./components/Dashboard/ManageServices/ManageServices";
+import Checkout from "./components/Checkout/Checkout";
+import Orders from "./components/Orders/Orders"
 
 export const UserContext = createContext();
 
@@ -40,6 +42,12 @@ function App() {
               </PrivateRoute>
               <PrivateRoute path="/manageServices">
                 <ManageServices />
+              </PrivateRoute>
+              <PrivateRoute path="/checkout/:id">
+                <Checkout />
+              </PrivateRoute>
+              <PrivateRoute path="/orders">
+                <Orders />
               </PrivateRoute>
             </Switch>
           </div>

@@ -2,11 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import ServiceList from '../ServiceList/ServiceList';
 import Sidebar from '../Sidebar/Sidebar';
-
-const containerStyle = {
-    backgroundColor: "#F4FDFB",
-    height: "100%"
-}
+import './ManageServices.css';
 
 const ManageServices = () => {
 
@@ -20,22 +16,25 @@ const ManageServices = () => {
     return (
         <section>
             <Sidebar></Sidebar>
-            <div style={containerStyle}>
-                <div>
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Service Name</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {
-                                services.map(services => <ServiceList key={services._id} services={services}> </ServiceList>)
-                            }
-                        </tbody>
-                    </table>
+            <div className="manage-services">
+                <div className="col-md-10 col-sm-10 ms-auto">
+                    <h3 className="text-center text-white">Services</h3>
+                    <div className="table-container">
+                        <table className="table service-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Service Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    services.map(services => <ServiceList key={services._id} services={services}> </ServiceList>)
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>

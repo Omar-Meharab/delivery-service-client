@@ -15,6 +15,7 @@ const Dashboard = () => {
                 </div>
                 <div className="col-md-10">
                     <h1>This is Dashboard</h1>
+                    <h4>Navigate Through The Sidebar</h4>
                 </div>
             </div>
         </div>
