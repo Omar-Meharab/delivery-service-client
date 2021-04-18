@@ -1,3 +1,4 @@
+import './ServiceDetail.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -8,7 +9,7 @@ const ServiceDetail = (props) => {
         history.push(`/checkout/${id}`);
     }
     return (
-        <div className="col-md-3 text-center shadow-sm mx-auto m-3">
+        <div className="animation col-md-3 text-center shadow-sm mx-auto m-3">
             <img style={{height: '100px'}} src={imageURL} alt="" />
             <h5 className="mt-3 mb-3">{name}</h5>
             <p className="text-secondary">Your first order will have 10% discount. Which one do you need? Just tell Us</p>

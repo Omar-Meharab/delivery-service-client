@@ -1,0 +1,7 @@
+.animation{
+    opacity:0.5;
+  }
+  .animation:hover{
+    transform: translate(10px, 10px);
+    opacity:1;
+  }
