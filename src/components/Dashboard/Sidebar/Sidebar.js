@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faCalendar, faGripHorizontal, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faGripHorizontal, faUsers, faList } from '@fortawesome/free-solid-svg-icons';
 import {  faFileAlt } from '@fortawesome/free-regular-svg-icons'
 
 const Sidebar = () => {
@@ -16,7 +16,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <Link to="/orders" className="text-white text-decoration-none">
-                        <FontAwesomeIcon icon={faCalendar} /> <span>Orders</span> 
+                        <FontAwesomeIcon icon={faList} /> <span>Orders</span> 
                     </Link>
                 </li>
                 <li>
@@ -32,6 +32,11 @@ const Sidebar = () => {
                 <li>
                     <Link to="/addServices" className="text-white text-decoration-none" >
                       <FontAwesomeIcon icon={faCog} /> <span>Add Services</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/manageServices" className="text-white text-decoration-none" >
+                      <FontAwesomeIcon icon={faCog} /> <span>Manage Services</span>
                     </Link>
                 </li>
             </ul>

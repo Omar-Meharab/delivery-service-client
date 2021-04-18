@@ -12,6 +12,7 @@ import Login from "./components/Login/Login/Login";
 import AddServices from "./components/Dashboard/AddServices/AddServices";
 import AddFeedbacks from "./components/Dashboard/AddFeedbacks/AddFeedbacks";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
+import ManageServices from "./components/Dashboard/ManageServices/ManageServices";
 
 export const UserContext = createContext();
 
@@ -31,11 +32,14 @@ function App() {
               <Route path="/dashboard">
                 <Dashboard />
               </Route>
-              <Route path="/addServices">
+              <PrivateRoute path="/addServices">
                 <AddServices />
-              </Route>
+              </PrivateRoute>
               <PrivateRoute path="/addFeedbacks">
                 <AddFeedbacks />
+              </PrivateRoute>
+              <PrivateRoute path="/manageServices">
+                <ManageServices />
               </PrivateRoute>
             </Switch>
           </div>
