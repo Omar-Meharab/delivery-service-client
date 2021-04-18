@@ -1,4 +1,3 @@
-import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 
 const containerStyle = {
@@ -7,6 +6,7 @@ const containerStyle = {
 }
 
 const Dashboard = () => {
+    
     return (
         <div>
             <div style={containerStyle} className="row">
