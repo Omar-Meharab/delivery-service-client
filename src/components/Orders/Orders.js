@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { UserContext } from '../../App';
 import Sidebar from "../Dashboard/Sidebar/Sidebar";
 
-const Bookings = () => {
+const Orders = () => {
     const [orders, setOrders] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
@@ -39,7 +39,7 @@ const Bookings = () => {
                                 <tbody key={services._id}>
                                     <tr>
                                         <td>{loggedInUser.name}</td>
-                                        <td>{services.name}</td>
+                                        <td>{services.service}</td>
                                         <td>{services.price}</td>
                                     </tr>
                                 </tbody>
@@ -52,4 +52,4 @@ const Bookings = () => {
     );
 };
 
-export default Bookings;
+export default Orders;

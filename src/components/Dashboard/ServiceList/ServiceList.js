@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ServiceList = (props) => {
-    const { name, price } = props.services;
+    const { service, price } = props.services;
 
     const deleteService = (id) => {
         fetch(`https://vast-hollows-78144.herokuapp.com/deleteService/${id}`, {
@@ -13,7 +13,7 @@ const ServiceList = (props) => {
     
     return (
         <tr>
-            <td>{name}</td>
+            <td>{service}</td>
             <td>{price}</td>
             <td><button onClick={() => deleteService(props.services._id)} className="btn btn-warning">Delete</button></td>
         </tr>

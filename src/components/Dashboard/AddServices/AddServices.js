@@ -53,7 +53,7 @@ const AddServices = () => {
                     <div className="col-md-9 mx-auto">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-group">
-                                <input name="name" className="form-control" defaultValue="Name" {...register("name")} />
+                                <input name="service" className="form-control" defaultValue="Service" {...register("service")} />
                             </div>
                             <br />
                             <div className="form-group">
